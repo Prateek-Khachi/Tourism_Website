@@ -15,7 +15,7 @@ dotenv.config();
 const __dirname = path.resolve();
 
 mongoose
-  .connect(process.env.MONGO_URL|| "mongodb+srv://singhpiyush938658:prince12345@cluster0.xvg8i.mongodb.net/")
+  .connect(process.env.MONGO_URL)
   .then(() => {
     console.log("MongoDB Connected");
   })
